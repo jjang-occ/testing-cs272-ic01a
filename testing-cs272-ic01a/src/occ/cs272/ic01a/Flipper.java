@@ -27,12 +27,14 @@ public class Flipper {
         Scanner input = new Scanner(System.in);
         System.out.print("How many times to flip? ");
         int n = input.nextInt();
+        String word;
         for (int i = 0; i < n; ++i)
         {
             if (Math.random() < 0.5)
-                System.out.print("heads ");
+                word = "heads";
             else
-                System.out.print("tails ");
+                word = "tails";
+            System.out.printf("%-7s", word);
             if (i % 10 == 9) System.out.println();
         }
         System.out.println();
