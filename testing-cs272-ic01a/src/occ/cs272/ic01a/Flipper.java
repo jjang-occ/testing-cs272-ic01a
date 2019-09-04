@@ -23,7 +23,6 @@ import java.util.Scanner;
 public class Flipper {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         Scanner input = new Scanner(System.in);
         System.out.print("How many times to flip? ");
         int n = input.nextInt();
@@ -39,8 +38,7 @@ public class Flipper {
         }
         System.out.println();
         
-        
-
+        input.close();
     }
 
 }
